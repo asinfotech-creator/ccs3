@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style type="text/css">
+*{ margin:0;
+padding:0;
+font-family:Verdana;
+}
+
+.main{ width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:80px;
+}
+
+.image{ width:450px;
+position:relative;
+}
+img{ width:100%;
+display:block;
+margin:auto;
+}
+.cont{ display:flex;
+position:absolute;
+align-items:center;
+justify-content:center;
+background-color:rgba(0,0,0,0.5);
+height:100%;
+width:100%;
+top:0;
+left:0;
+flex-direction:column;
+color:rgba(255,255,255,1);
+opacity:0;
+transition:0.9s;
+text-align:center;
+}
+
+.cont:hover{ opacity:1;
+transform:scale(100%, 80%);
+	
+	
+	}
+
+
+
+</style>
+
+
+
+
+
+<body>
+<div class="main">
+<div class="image">
+<img src="dear.jpg" />
+<div class="cont">
+<h3>Hello AS Info Tech Coder's</h3>
+<p>Dear AS info Tech Coder's this message will appears when user hover on this photo</p>
+</div>
+</div>
+</div>
+</body>
+</html>
