@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style type="text/css">
+.container{ margin-top:50px;
+align-items:center;
+display:flex;
+justify-content:center;
+}
+
+
+.front{ font-family:Tahoma;
+font-size:18px;
+background-color:rgba(0,153,255,1);
+}
+
+.back{ font-family:Tahoma;
+font-size:18px;
+background-color:rgba(155,153,255,1);
+}
+
+.card{height:400px;
+width:300px;
+position:relative;
+}
+
+
+.front,.back{width:100%;
+height:100%;
+position:absolute;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+
+.card:hover{ transform: rotateY(180deg); }
+
+
+.front {backface-visibility:visible; }
+
+.card {transform-style: preserve-3d; }
+
+.back{backface-visibility:hidden;
+transform: rotateY(180deg);
+}
+
+.container {perspective: 1000px; }
+
+.card { transition: all 0.8s ease-in; }
+
+
+</style>
+
+
+<body>
+<div class="container">
+
+<div class="card">
+<div class="front">
+AS Info Tech
+</div>
+<div class="back">
+Web Site Devlopment
+</div>
+</div>
+</div>
+</body>
+</html>
