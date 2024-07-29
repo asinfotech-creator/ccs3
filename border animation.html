@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<style type="text/css">
+	*{ margin:0;
+	padding:0;
+		box-sizing: border-box;
+}
+	body{ min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		background:#656161;
+		}
+	
+	div{height: 200px;
+		width: 200px;
+		box-shadow:16px 14px 20px black;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		overflow:hidden;
+		border-radius:50%;
+		
+		}
+	
+	div::before{ content: "";
+		width:100%;
+		height:100%;
+		background-image:conic-gradient(red 20deg, transparent 120deg);
+		position:relative;
+		animation:rotat 2s linear infinite; 
+		border-radius:50%;
+		}
+	
+	div::after{
+		content:"ASIT";
+		width:190px;
+		height:190px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position:absolute;
+		color:antiquewhite;
+		font-size:50px;
+		letter-spacing:5px;
+		box-shadow:inset 20px 20px 20px black;
+		background:black;
+		border-radius:50%;
+	}
+	
+	@keyframes rotat{
+		to{ transform:rotate(-360deg);
+		}
+	}
+	
+	</style>
+	
+	
+	
+<body>
+	<div> </div>
+</body>
+</html>
